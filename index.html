@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head> <title> V-Meet - A simple video chat app</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-  <link rel="stylesheet" href="style.css" type="text/css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <style>
-  video {
+    body {
+      background: #0098ff;
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 50px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    video {
       background: white;
-      background-image: url(images\InShot_20210824_233400856.jpg);
+      background-image: url(https://www.kirupa.com/images/orange_logo_svg.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       max-width: calc(50% - 5%);
-      margin: 0 10%;
+      margin: 0 5%;
       box-sizing: border-box;
-      border-radius: 15px;
-      padding: 0;
+      border-radius: 2px;
       
     }
-    div {text-align: center;}
+    .copy {
+      position: fixed;
+      top: 25px;
+      left: 37%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      color: white;
+    }
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="copy2"> <h3 style="border:white";>  V-Meet  - A simple video chatting app </h3>
-  </div>
-  <br> </br>
-  <hr></hr>
-  <div class="copy"> <h5> (Send your URL to a friend to start a video call) </h5>
-  </div>
-
+  <div class="copy">Send your URL to a friend to start a video call</div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
   <script src="script.js"></script>
-  <hr></hr>
-  <footer> 
-     <img src="images\InShot_20210824_233400856.jpg" width="150" align="center" >
-     <hr></hr>
-     <p align="bottom" color="white">Created By:- <a href="https://www.instagram.com/anmolukey07/">@anmolukey07</a>
-      </p>
-    </footer>
 </body>
 </html>
