@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head> <title> V-Meet - A simple video chat app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+  video {
+      background: white;
+      background-image: url(images\InShot_20210824_233400856.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      max-width: calc(70% - 70);
+      margin: 0 10%;
+      box-sizing: border-box;
+      border-radius: 15px;
+      
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="copy2"> <h3 style="border:white";>  V-Meet  - A simple video chatting app </h3>
+  </div>
+  <hr> </hr>
+  <div class="copy"> <h5> (Send your URL to a friend to start a video call) </h5>
+  </div>
+
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <script src="script.js"></script>
+  <hr></hr>
+  <footer> <p align="bottom" color="white">Created By:- <a href="https://www.instagram.com/anmolukey07/">@anmolukey07</a>
+      </p>
+     <img src="images\InShot_20210824_233400856.jpg" width="150" align="center" >
+    </footer>
+</body>
+</html>
